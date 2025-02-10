@@ -1,0 +1,1111 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+    z-index: 1000;
+}
+
+/* Ensures navbar doesn't overlap content */
+body {
+    padding-top: 80px; /* Adjust based on navbar height */
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Nav links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix for "Hire Developers" button */
+.nav-links li:last-child {
+    margin-left: auto; /* Pushes the button to the right */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0074D9;
+}
+
+/* Hire Developers Button */
+.hire-button {
+    background: linear-gradient(90deg, #0074D9, #62C6FF);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hire-button:hover {
+    background: linear-gradient(90deg, #62C6FF, #0074D9);
+}
+
+/* Menu toggle (hidden by default) */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: black;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 3%;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Show nav when active */
+    .nav-active {
+        display: flex;
+    }
+
+    .hire-button {
+        display: block; /* Ensure it's visible on mobile */
+        margin: 10px auto; /* Center it */
+        width: 80%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* Banner section */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+}
+
+/* Left content */
+.banner-content {
+    max-width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* Highlighted text with Deploy Now colors */
+.banner-content h1 span {
+    background: linear-gradient(90deg, #62C6FF, #0074D9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Bullet points */
+.banner-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.banner-content ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #333;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #0074D9, #62C6FF);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: linear-gradient(90deg, #62C6FF, #0074D9);
+}
+
+/* Right image */
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    .banner-content {
+        max-width: 100%;
+    }
+
+    .banner-image {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .banner-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .banner-content ul li {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* Key Benefits Section - 2 Cards per Row on Medium Screens */
+.key-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0074D9, #62C6FF);
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.benefit-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+    text-align: center;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+.icon-circle i {
+    font-size: 28px;
+}
+
+.benefit-card h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Technologies Section */
+.technologies {
+    text-align: center;
+    padding: 50px;
+}
+
+.technologies h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.technologies p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Technology Carousel - Now Fully Visible on 1024px */
+.tech-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #0074D9 #f8f9fa;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech-slide {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 120px;
+    background: #0074D9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    transition: transform 0.3s;
+}
+
+.tech-slide i {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.tech-slide span {
+    font-size: 14px;
+}
+
+.tech-slide:hover {
+    transform: scale(1.1);
+}
+
+/* Hide Scrollbar */
+.tech-carousel::-webkit-scrollbar {
+    height: 5px;
+}
+
+.tech-carousel::-webkit-scrollbar-thumb {
+    background: #0074D9;
+    border-radius: 5px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    .key-benefits {
+        grid-template-columns: 1fr 1fr; /* 2 cards per row */
+        gap: 30px;
+    }
+
+    .tech-carousel {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tech-slide {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .key-benefits {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .benefit-card {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .tech-carousel {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tech-slide {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+
+
+
+/* Hiring Process Section */
+.hiring-process {
+    text-align: center;
+    padding: 40px 5%;
+    background: #6393c33e;
+    color: #333;
+  }
+  
+  .hiring-process h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #0074D9; /* Your primary logo color */
+  }
+  
+  .process-subtext {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* Container for the steps */
+  .process-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* max-width: 1200px; */
+    margin: auto;
+  }
+  
+  /* Individual Step */
+  .process-step {
+    flex: 1 1 22%;  /* Ensures 4 steps per row */
+    max-width: 260px; /* Prevents excessive stretching */
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @media (max-width:478px){
+    .process-step{
+        max-width: 250px !important;
+    }
+  }
+  .process-step:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Step Icon */
+  .step-icon {
+    font-size: 1.8rem;
+    color: #0074D9;
+    background: #eef6ff;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  
+  /* Step Text */
+  .process-step h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #222;
+  }
+  
+  .process-step p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* Medium screens: Show 2 per row */
+  @media (max-width: 1024px) {
+    .process-step {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  }
+  
+  /* Small screens: Stack in one column */
+  @media (max-width: 768px) {
+    .process-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .process-step {
+      flex: 1 1 100%;
+      max-width: 400px;
+    }
+  }
+  
+
+
+
+  /* Trusted Companies Section */
+.trusted-companies {
+    text-align: center;
+    padding: 50px 5%;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.trusted-companies h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0074D9;
+}
+
+.trusted-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Logo Grid */
+.logo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Logo Styling */
+.logo-container img {
+    width: 150px; /* Ensures equal size */
+    height: 60px; /* Keeps a uniform height */
+    object-fit: contain; /* Ensures logo is not stretched */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.logo-container img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .logo-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+/* Success Metrics Section */
+.success-metrics {
+    text-align: center;
+    padding: 50px 5%;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.success-metrics h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0074D9;
+}
+
+.metrics-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Metrics Container */
+.metrics-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Individual Metric */
+.metric {
+    margin-bottom: 20px;
+}
+
+/* Metric Label */
+.metric-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #222;
+    text-align: left;
+}
+
+/* Bar Container */
+.metric-bar {
+    width: 100%;
+    background: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Filled Bar */
+.fill {
+    height: 100%;
+    background: linear-gradient(90deg, #0074D9, #62C6FF);
+    width: 0; /* Start empty for animation */
+    transition: width 1.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/* About Company Section */
+.about-company {
+    text-align: center;
+    padding: 60px 5%;
+    background: linear-gradient(135deg, #0074D9, #62C6FF);
+    color: white;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grid Layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Individual Box */
+.about-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+    text-align: center;
+}
+
+.about-box i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.about-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 1rem;
+}
+
+/* Hover Effect */
+.about-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+/* Blog Section */
+.blog-section {
+    background: #6393c33e ;
+    text-align: center;
+    padding: 60px 5%;
+ 
+    color: #333;
+}
+
+.blog-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0074D9;
+}
+
+.blog-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Blog Container */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Blog Card */
+.blog-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.blog-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    text-decoration: none;
+    background: #0074D9;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.read-more:hover {
+    background: #005bb5;
+}
+
+
+
+
+
+/* Process Section */
+.process-section {
+    text-align: center;
+    padding: 60px 5%;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.process-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0074D9;
+}
+
+.process-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Process Container */
+.process-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    gap: 20px;
+}
+
+/* Process Step */
+.process-step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+/* Circular Icons */
+.process-icon {
+    width: 90px;
+    height: 90px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+}
+
+.process-icon i {
+    font-size: 2rem;
+    color: #0074D9;
+}
+
+/* Progress Circle */
+.progress-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #0074D9;
+    animation: spin 1.5s linear infinite;
+}
+
+/* Animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Step Day */
+.step-day {
+    display: inline-block;
+    background: #0074D9;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Step Description */
+.step-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+/* Hire Button */
+.hire-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: #0074D9;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hire-btn:hover {
+    background: #005bb5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .process-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .process-step {
+        flex: 0 0 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .process-container {
+        flex-direction: column;
+    }
+
+    .process-step {
+        flex: 1;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Contract Hiring Form Section */
+.contract-hiring-form {
+    background: #6393c33e ;
+    text-align: center;
+    padding: 60px 5%;
+    /* background: #f8f9fa; */
+    color: #333;
+}
+
+.contract-hiring-form h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0074D9;
+}
+
+.contract-form-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Form Styling */
+.contract-form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.contract-form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contract-form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contract-form-group input,
+.contract-form-group textarea {
+    width: 95%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.contract-form-group input:focus,
+.contract-form-group textarea:focus {
+    border-color: #0074D9;
+    outline: none;
+}
+
+/* Warning Message */
+.form-warning {
+    font-size: 0.9rem;
+    color: red;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Submit Button */
+.contract-submit-btn {
+    width: 100%;
+    background: #0074D9;
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contract-submit-btn:hover {
+    background: #005bb5;
+}
+
+/* Responsive Adjustments */
+@media (min-width:425px) and (max-width: 768px) {
+    .contract-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .contract-form {
+        width: 80% ;
+    }
+}
+
+
+
+
+
+
+/* Footer Styles */
+.site-footer {
+    background: #0a0a0a;
+    color: white;
+    padding: 50px 5%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Footer Sections */
+.footer-about h3 {
+    color: #0074D9;
+    font-size: 1.8rem;
+}
+
+.footer-links h4, 
+.footer-contact h4, 
+.footer-social h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #0074D9;
+}
+
+/* Footer Contact */
+.footer-contact p {
+    margin-bottom: 8px;
+}
+
+.footer-contact i {
+    margin-right: 8px;
+    color: #0074D9;
+}
+
+/* Social Icons */
+.footer-social a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #0074D9;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .footer-social a {
+        display: inline-block;
+        margin: 10px;
+    }
+}
