@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Consultants</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/x-icon" href="./images/Deployknow Transparent logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/Deployknow Transparent logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./tech.html">Tech Consultants</a></li>
+            <li><a href="./partner.html">Become a Partner</a></li>
+            <li><a href="./technologies.html">Technologies</a></li>
+            <li><a href="#" class="hire-button">Hire Developers</a></li>
+            <li><a href=""></a></li>
+        </ul>
+        
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+    
+
+    <script>
+        // Select menu toggle button and nav links
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        // Toggle menu on click
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-active");
+        });
+
+    </script>
+
+
+
+
+
+
+    <section class="tech-hero">
+        <div class="tech-hero-container">
+            <h1 class="tech-hero-title">Unlock the Power of Automated Promotions</h1>
+            <p class="tech-hero-subtext">Boost customer engagement and increase revenue with AI-powered, data-driven promotional solutions tailored for your business.</p>
+            <div class="tech-hero-buttons">
+                <a href="#" class="tech-btn tech-btn-primary">Join Now</a>
+                <!-- <a href="#" class="tech-btn tech-btn-secondary">Request a Demo</a> -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="deploy-services">
+        <div class="deploy-services-container">
+            <h2 class="deploy-services-title">Our Core Services</h2>
+            <div class="deploy-services-grid">
+                <div class="deploy-service-item">
+                    <img src="./images/integration.png" alt="Service 1 Icon" class="deploy-service-icon">
+                    <h3 class="deploy-service-name">Continuous Integration</h3>
+                    <p class="deploy-service-description">Streamline your development process with automated testing and integration.</p>
+                </div>
+                <div class="deploy-service-item">
+                    <img src="./images/deploy.png" alt="Service 2 Icon" class="deploy-service-icon">
+                    <h3 class="deploy-service-name">Automated Deployment</h3>
+                    <p class="deploy-service-description">Ensure reliable and consistent releases with our automated deployment pipelines.</p>
+                </div>
+                <div class="deploy-service-item">
+                    <img src="./images/monitoring_3703299.png" alt="Service 3 Icon" class="deploy-service-icon">
+                    <h3 class="deploy-service-name">Real-Time Monitoring</h3>
+                    <p class="deploy-service-description">Gain insights into your applications with comprehensive monitoring solutions.</p>
+                </div>
+                <div class="deploy-service-item">
+                    <img src="./images/optimization.png" alt="Service 4 Icon" class="deploy-service-icon">
+                    <h3 class="deploy-service-name">Scalability Optimization</h3>
+                    <p class="deploy-service-description">Optimize your infrastructure to handle growth efficiently and effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+    <section class="tech-refer">
+        <div class="tech-refer-container">
+            <h2 class="tech-refer-title">Refer & Earn Rewards</h2>
+            <div class="tech-refer-grid">
+                <div class="tech-refer-card refer-clients">
+                    <div class="refer-image">
+                        <img src="./images/clients.jpg" alt="Connect Clients">
+                    </div>
+                    <div class="refer-content">
+                        <h3>Connect Clients, Earn Recurring Rewards</h3>
+                        <p>Refer businesses in need of tech talent and earn referral bonuses for each hire.</p>
+                        <p><strong>Earn USD 200 for international hires and INR 8,000 for domestic hires.</strong></p>
+                    </div>
+                </div>
+                <div class="tech-refer-card refer-friends">
+                    <div class="refer-image">
+                        <img src="./images/refer.jpg" alt="Refer Friends">
+                    </div>
+                    <div class="refer-content">
+                        <h3>Refer Friends, Earn Cash</h3>
+                        <p>Earn passive income by referring friends for job positions.</p>
+                        <p><strong>Earn USD 100 for international hires and INR 4,000 for domestic hires.</strong></p>
+                    </div>
+                </div>
+                <div class="tech-refer-card refer-manage">
+                    <div class="refer-image">
+                        <img src="./images/manage.jpg" alt="Manage Clients">
+                    </div>
+                    <div class="refer-content">
+                        <h3>Manage Clients or Teams & Earn Recurring Commissions</h3>
+                        <p>Become an account manager and earn up to <strong>20% commission</strong> on profit margins.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="tech-faq">
+        <div class="tech-faq-container">
+            <h2 class="tech-faq-title">Frequently Asked Questions</h2>
+            <div class="tech-faq-list">
+                <div class="tech-faq-item">
+                    <button class="faq-question">What are the responsibilities of a tech consultant? <span>+</span></button>
+                    <div class="faq-answer">Tech consultants analyze business needs and implement tech solutions to enhance efficiency.</div>
+                </div>
+                <div class="tech-faq-item">
+                    <button class="faq-question">Who can apply for a consultant role? <span>+</span></button>
+                    <div class="faq-answer">Anyone with expertise in technology, problem-solving skills, and industry experience can apply.</div>
+                </div>
+                <div class="tech-faq-item">
+                    <button class="faq-question">What if I don’t have time to manage multiple clients? <span>+</span></button>
+                    <div class="faq-answer">You can choose projects based on availability or work with a team to delegate tasks.</div>
+                </div>
+                <div class="tech-faq-item">
+                    <button class="faq-question">How is the payment structured for consultants? <span>+</span></button>
+                    <div class="faq-answer">Payments are based on project scope and complexity, with potential for recurring commissions.</div>
+                </div>
+                <div class="tech-faq-item">
+                    <button class="faq-question">Can I work part-time while having a full-time job? <span>+</span></button>
+                    <div class="faq-answer">Yes, tech consulting allows for flexible schedules based on project demands.</div>
+                </div>
+                <div class="tech-faq-item">
+                    <button class="faq-question">When will I receive payments for my work? <span>+</span></button>
+                    <div class="faq-answer">Payments are typically made upon project completion or in agreed-upon milestones.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="tech-freelance">
+        <div class="tech-freelance-container">
+            <h2 class="tech-freelance-title">Freelance Globally, <span>Earn More</span></h2>
+            <p class="tech-freelance-subtext">Access high-paying global freelance opportunities. Work on projects that match your expertise and get paid well.</p>
+            <div class="tech-freelance-grid">
+                <div class="tech-freelance-item">
+                    <img src="./images/contract_2666523.png" alt="Secure Contracts">
+                    <h3>Secure Long-Term Contracts</h3>
+                </div>
+                <div class="tech-freelance-item">
+                    <img src="./images/remote-work_12322793.png" alt="Flexible Work">
+                    <h3>Flexible, Remote Work</h3>
+                </div>
+                <div class="tech-freelance-item">
+                    <img src="./images/paid_4272841.png" alt="Fair Pay">
+                    <h3>Get Paid What You Deserve</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="tech-freelance-faq">
+        <div class="tech-freelance-faq-container">
+            <h2 class="tech-freelance-faq-title">Freelancing FAQs</h2>
+            <div class="tech-freelance-faq-list">
+                <div class="tech-freelance-faq-item">
+                    <button class="faq-question">How do I get started as a freelancer? <span>+</span></button>
+                    <div class="faq-answer">Create a profile, showcase your skills, and start applying for projects that match your expertise.</div>
+                </div>
+                <div class="tech-freelance-faq-item">
+                    <button class="faq-question">What are the payment methods available? <span>+</span></button>
+                    <div class="faq-answer">We support payments via bank transfer, PayPal, and cryptocurrency for global accessibility.</div>
+                </div>
+                <div class="tech-freelance-faq-item">
+                    <button class="faq-question">How do I secure long-term contracts? <span>+</span></button>
+                    <div class="faq-answer">Consistently deliver high-quality work and build strong relationships with clients.</div>
+                </div>
+                <div class="tech-freelance-faq-item">
+                    <button class="faq-question">Can I work with multiple clients at once? <span>+</span></button>
+                    <div class="faq-answer">Yes, freelancers can take on multiple projects as long as they meet deadlines and maintain quality.</div>
+                </div>
+                <div class="tech-freelance-faq-item">
+                    <button class="faq-question">What is the average payout timeline? <span>+</span></button>
+                    <div class="faq-answer">Payments are processed within 7-14 days after project completion and approval.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section class="tech-contact">
+        <div class="tech-contact-container">
+            <h2 class="tech-contact-title">Get in Touch</h2>
+            <p class="tech-contact-subtext">We'd love to hear from you! Whether you have questions, need support, or want to discuss a project, feel free to reach out.</p>
+            <form class="tech-contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="tech-contact-btn">Send Message</button>
+            </form>
+        </div>
+    </section> -->
+
+    <section class="contract-hiring-form">
+        <h2>🚀 Hire Talented Developers on Contract</h2>
+        <p class="contract-form-subtext">Submit your inquiry here. We ensure you are matched with the right resource based on your requirements.</p>
+    
+        <form id="contractForm" class="contract-form">
+            <div class="contract-form-group">
+                <label for="contract-name">Your Name *</label>
+                <input type="text" id="contract-name" name="name" placeholder="Enter your full name" required>
+            </div>
+    
+            <div class="contract-form-group">
+                <label for="contract-email">Email ID *</label>
+                <input type="email" id="contract-email" name="email" placeholder="Enter your email address" required>
+            </div>
+    
+            <div class="contract-form-group">
+                <label for="contract-message">Message *</label>
+                <textarea id="contract-message" name="message" placeholder="Share your requirements in detail here." required></textarea>
+            </div>
+    
+            <p class="form-warning">⚠ Do not submit passwords or sensitive information.</p>
+    
+            <button type="submit" class="contract-submit-btn">Submit Inquiry</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>🚀 DeployNow</h3>
+                <p>Providing top-tier software engineers to scale your business with ease.</p>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> support@deploynow.com</p>
+                <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA</p>
+            </div>
+    
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 DeployNow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+<script src="./scripts.js"></script>
+</body>
+</html>

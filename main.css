@@ -26,7 +26,7 @@ body {
 
 /* Fix Logo Size & Alignment */
 .logo img {
-    height: 40px;
+    height: 60px;
     max-width: 100%;
     object-fit: contain;
 }
@@ -91,12 +91,13 @@ body {
     }
 
     .logo {
+        
         width: 100%;
         text-align: left;
     }
 
     .logo img {
-        height: 35px;
+        height: 45px;
     }
 
     .nav-links {
@@ -1125,4 +1126,812 @@ body {
         display: inline-block;
         margin: 10px;
     }
+}
+
+
+
+
+
+/* Tech Consultants page css */
+.tech-hero {
+    background: linear-gradient(135deg, #0a0f1e, #1c3b6c);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width:425px){
+    .tech-hero{
+        padding: 40px 20px;
+    }
+}
+
+.tech-hero-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.tech-hero-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4db8ff;
+    animation: fadeInUp 1s ease-out;
+}
+
+.tech-hero-subtext {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 25px;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.tech-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+.tech-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.tech-btn-primary {
+    background: #4db8ff;
+    color: white;
+}
+
+.tech-btn-primary:hover {
+    background: #3498db;
+}
+
+.tech-btn-secondary {
+    background: transparent;
+    color: #4db8ff;
+    border: 2px solid #4db8ff;
+}
+
+.tech-btn-secondary:hover {
+    background: #4db8ff;
+    color: white;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+.deploy-services {
+    background-color: #f5f7fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.deploy-services-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.deploy-services-title {
+    font-size: 2.5rem;
+    color: #1c3b6c;
+    margin-bottom: 50px;
+}
+
+.deploy-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.deploy-service-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.deploy-service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.deploy-service-icon {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.deploy-service-name {
+    font-size: 1.5rem;
+    color: #1c3b6c;
+    margin-bottom: 15px;
+}
+
+.deploy-service-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+
+
+
+
+.tech-refer {
+    background: #6393c33e ;
+    /* background-color: #f5f7fa; */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.tech-refer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tech-refer-title {
+    font-size: 2.5rem;
+    color: #1c3b6c;
+    margin-bottom: 50px;
+}
+
+.tech-refer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width:320px){
+    .tech-refer-grid{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+.tech-refer-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tech-refer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.refer-image img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+.refer-content h3 {
+    font-size: 1.5rem;
+    color: #1c3b6c;
+    margin-bottom: 15px;
+}
+
+.refer-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.refer-clients {
+    background: #ffeb99;
+}
+
+.refer-friends {
+    background: #d9a879;
+}
+
+.refer-manage {
+    background: #c3e6cb;
+}
+
+
+
+
+.tech-faq, .tech-freelance-faq {
+    /* background-color: #0a0f1e; */
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+}
+
+.tech-faq-container, .tech-freelance-faq-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.tech-faq-title, .tech-freelance-faq-title {
+    font-size: 2.5rem;
+    color: #005bb5;
+    margin-bottom: 30px;
+}
+
+.tech-faq-list, .tech-freelance-faq-list {
+    text-align: left;
+}
+
+.tech-faq-item, .tech-freelance-faq-item {
+    background: #47b472cc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.faq-question span {
+    font-size: 1.5rem;
+    color: #4db8ff;
+}
+
+.tech-faq-item.active .faq-answer {
+    display: block;
+}
+
+
+
+
+.tech-freelance {
+    background: linear-gradient(135deg, #0a0f1e, #1c3b6c);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.tech-freelance-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.tech-freelance-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.tech-freelance-title span {
+    color: #4db8ff;
+    font-weight: bold;
+}
+
+.tech-freelance-subtext {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.tech-freelance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width:320px){
+    .tech-freelance-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+}
+.tech-freelance-item {
+    background: #223a5e;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tech-freelance-item img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.tech-freelance-item h3 {
+    font-size: 1.4rem;
+    color: #4db8ff;
+}
+
+
+
+
+
+
+
+
+
+.tech-freelance-faq {
+    /* background-color: #0a0f1e; */
+    padding:20px 20px;
+    text-align: center;
+    color: white;
+}
+
+.tech-freelance-faq-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.tech-freelance-faq-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #005bb5;
+}
+
+.tech-freelance-faq-list {
+    text-align: left;
+}
+
+.tech-freelance-faq-item {
+    background: #1c3b6c;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.faq-question span {
+    font-size: 1.5rem;
+    color: #4db8ff;
+}
+
+.tech-freelance-faq-item.active .faq-answer {
+    display: block;
+}
+
+
+
+/* 
+.tech-contact {
+    background: #6393c33e ;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.tech-contact-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.tech-contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.tech-contact-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.tech-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tech-contact-form input, .tech-contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.tech-contact-form textarea {
+    height: 120px;
+}
+
+.tech-contact-btn {
+    background: #4db8ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tech-contact-btn:hover {
+    background: #3498db;
+} */
+
+
+
+
+
+
+/* partner page css */
+.partner-hero {
+    position: relative;
+    background: url('./images/handshake-businessmen.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.partner-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.partner-hero-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    z-index: 2;
+}
+
+.partner-hero-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4db8ff;
+}
+
+.partner-hero-subtext {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.partner-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.partner-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.partner-btn-primary {
+    background: #4db8ff;
+    color: white;
+}
+
+.partner-btn-primary:hover {
+    background: #3498db;
+}
+
+.partner-btn-secondary {
+    background: transparent;
+    color: #4db8ff;
+    border: 2px solid #4db8ff;
+}
+
+.partner-btn-secondary:hover {
+    background: #4db8ff;
+    color: white;
+}
+
+
+
+
+.partner-benefits {
+    background-color: #f5f7fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.partner-benefits-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.partner-benefits-title {
+    font-size: 2.5rem;
+    color: #1c3b6c;
+    margin-bottom: 50px;
+}
+
+.partner-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+@media (max-width:320px){
+    .partner-benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+}
+
+.partner-benefit-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.partner-benefit-icon {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+.partner-types {
+    background-color: #0a0f1e;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.partner-types-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.partner-types-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #4db8ff;
+}
+
+.partner-types-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.partner-type-card {
+    background: #1c3b6c;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partner-type-image img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.partner-type-content {
+    text-align: center;
+}
+
+.partner-type-content ul {
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.partner-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.partner-btn-primary {
+    background: #4db8ff;
+    color: white;
+}
+
+.partner-btn-primary:hover {
+    background: #3498db;
+}
+
+.partner-btn-secondary {
+    background: transparent;
+    color: #4db8ff;
+    border: 2px solid #4db8ff;
+}
+
+.partner-btn-secondary:hover {
+    background: #4db8ff;
+    color: white;
+}
+
+
+
+
+.technologies-hero {
+    position: relative;
+    background: url('./images/technologies-banner.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.technologies-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.technologies-hero-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    z-index: 2;
+}
+
+.technologies-hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: bold;
+}
+
+.technologies-hero-subtext {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    opacity: 0.8;
+}
+
+.technologies-list {
+    background-color: #f5f7fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.technologies-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.technologies-title {
+    font-size: 2.5rem;
+    color: #1c3b6c;
+    margin-bottom: 50px;
+}
+
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+@media (max-width:320px){
+    .technologies-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+}
+
+.technology-category {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.technologies-benefits {
+    background-color: #0a0f1eef;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.technologies-benefits-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.technologies-benefits-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.technologies-benefits-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+}
+
+.benefit-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
 }
